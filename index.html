@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080914">
+<title>ميثولوجيا الأزل الأعظم</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700;800&display=swap');
+:root{--bg:#080914;--panel:#111426;--gold:#d8b56a;--muted:#a5a8bd;--line:#292d45;--white:#f4f0e8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#25213f 0%,#101225 35%,var(--bg) 72%);color:var(--white);font-family:'Cairo',sans-serif;min-height:100vh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.32;background-image:radial-gradient(1px 1px at 12% 18%,#fff 99%,transparent),radial-gradient(1px 1px at 76% 30%,#d8b56a 99%,transparent),radial-gradient(2px 2px at 43% 72%,#fff 99%,transparent),radial-gradient(1px 1px at 88% 83%,#fff 99%,transparent),radial-gradient(1px 1px at 23% 91%,#d8b56a 99%,transparent);background-size:310px 260px}
+header{position:relative;text-align:center;padding:76px 20px 54px;overflow:hidden;border-bottom:1px solid var(--line)}
+.orbit{width:170px;height:170px;border:1px solid #b997554d;border-radius:50%;margin:0 auto 22px;display:grid;place-items:center;box-shadow:0 0 65px #b9975520,inset 0 0 45px #b9975510;position:relative}
+.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #d8b56a55;border-radius:50%;inset:17px;transform:rotate(35deg) scaleX(1.5)}
+.orbit:after{transform:rotate(-35deg) scaleX(1.5)}
+.sig{font-size:58px;color:var(--gold);text-shadow:0 0 28px #d8b56a88}
+.eyebrow{color:var(--gold);letter-spacing:4px;font-size:12px}
+h1{font-family:'Amiri',serif;font-size:clamp(38px,7vw,68px);margin:10px 0;color:#f4dfb2;font-weight:700}
+.subtitle{color:var(--muted);max-width:650px;margin:0 auto;line-height:2}
+nav{position:sticky;top:0;z-index:5;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:12px;background:#090b18eF;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+button{font:inherit;cursor:pointer;border:1px solid var(--line);background:#15182b;color:#d9d9e4;padding:9px 16px;border-radius:30px;transition:.25s}
+button:hover,button.active{border-color:var(--gold);color:var(--gold);background:#292238}
+main{width:min(950px,92%);margin:42px auto 80px}
+.intro{padding:25px 28px;border:1px solid #8e74433d;background:linear-gradient(135deg,#17182b,#111323);border-radius:18px;line-height:2;color:#d8d7e1;margin-bottom:35px}
+.intro strong{color:var(--gold)}
+.section-title{font-family:'Amiri',serif;color:var(--gold);font-size:30px;margin:0 0 20px}
+.chapters{display:grid;gap:18px}
+.chapter{border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#15182aee,#0e1020ee);overflow:hidden;transition:.3s}
+.chapter:hover{border-color:#8f774a88;transform:translateY(-2px)}
+.chapter-head{display:flex;align-items:center;gap:14px;padding:20px 22px;cursor:pointer}
+.number{width:42px;height:42px;flex:none;border:1px solid #a98a4e88;border-radius:50%;display:grid;place-items:center;color:var(--gold);font-family:'Amiri',serif;font-size:20px}
+.chapter h3{font-family:'Amiri',serif;font-size:23px;margin:0;color:#f0dfbb}
+.chapter small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+.arrow{margin-right:auto;color:var(--gold);font-size:20px;transition:.25s}
+.chapter.open .arrow{transform:rotate(180deg)}
+.chapter-body{display:none;padding:0 25px 25px 25px;color:#d1d2df;line-height:2.2;font-size:16px}
+.chapter.open .chapter-body{display:block;animation:fade .35s ease}
+.chapter-body p{margin:0 0 13px}
+.chapter-body .quote{border-right:2px solid var(--gold);padding:10px 17px;margin:17px 0;color:#f0d9a6;background:#d8b56a0b;font-family:'Amiri',serif;font-size:21px}
+.chapter-body .note{color:#9fa4bd;font-size:13px}
+.divider{height:1px;background:linear-gradient(90deg,transparent,#9c804b88,transparent);margin:38px 0}
+.codex{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.codex article{padding:17px;border:1px solid var(--line);border-radius:13px;background:#111426}
+.codex b{color:var(--gold);display:block;margin-bottom:5px}
+.codex span{color:var(--muted);font-size:13px;line-height:1.8}
+footer{text-align:center;padding:28px 15px 45px;color:#777d96;border-top:1px solid var(--line);font-size:12px}
+#topBtn{position:fixed;bottom:18px;left:18px;display:none;background:#282239;color:var(--gold)}
+@keyframes fade{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:none}}
+@media(max-width:600px){header{padding-top:48px}.orbit{width:135px;height:135px}.sig{font-size:45px}.chapter-head{padding:16px}.chapter-body{padding:0 18px 20px;font-size:15px}.chapter h3{font-size:20px}.intro{padding:19px}}
+</style>
+</head>
+<body>
+<header id="home">
+  <div class="orbit"><div class="sig">✧</div></div>
+  <div class="eyebrow">THE ETERNAL COSMOS · سجل العصور</div>
+  <h1>ميثولوجيا الأزل الأعظم</h1>
+  <p class="subtitle">حكاية العروش القديمة، والكيانات التي سبقت القوانين، والأسرار التي لا تعرفها حتى الآلهة.</p>
+</header>
+<nav>
+  <button class="active" data-target="story">السرد الأسطوري</button>
+  <button data-target="pantheon">العروش والكيانات</button>
+  <button data-target="home">البداية</button>
+  <button id="expandAll">فتح جميع الفصول</button>
+</nav>
+<main>
+<section id="story">
+  <div class="intro"><strong>تمهيد:</strong> هذا عالم خيالي مستقل. لا توجد فيه حقيقة نهائية معلنة عن أصل الوجود؛ فالكيانات القديمة نفسها تختلف في تفسير ما سبق ظهورها. لا أحد يملك بالضرورة سلطة مطلقة، ولا يلزم أن يكون لكل موجود خالق.</div>
+  <h2 class="section-title">السجل الأول · حكاية العروش</h2>
+  <div class="chapters" id="chapters"></div>
+</section>
+<div class="divider"></div>
+<section id="pantheon">
+  <h2 class="section-title">سجل العروش والكيانات</h2>
+  <div class="codex">
+    <article><b>أوريان</b><span>سيد التكوين وبنية العوالم.</span></article>
+    <article><b>ناهير</b><span>سيد الزمن وتعاقب الأحداث.</span></article>
+    <article><b>زاركون</b><span>سيد الفناء ونهايات الموجودات.</span></article>
+    <article><b>إيلورا</b><span>سيدة الحياة ونشأة الكائنات.</span></article>
+    <article><b>ميراث</b><span>سيد الذاكرة وحافظ السجلات.</span></article>
+    <article><b>فالكير</b><span>سيد الفراغ والمساحات الخالية.</span></article>
+    <article><b>سيرافون</b><span>سيد الاحتمالات والمسارات الممكنة.</span></article>
+    <article><b>أزراخ</b><span>المنفي الأول، لا يخضع لقوانين العروش بسهولة.</span></article>
+    <article><b>إيثارون</b><span>الحارس الأخير لحدود العوالم.</span></article>
+    <article><b>فالزار</b><span>سيد الأصل المكاني من أصحاب العروش القديمة.</span></article>
+    <article><b>أركيون</b><span>حاكم التحولات.</span></article>
+    <article><b>نيمورا</b><span>سيدة النسيان.</span></article>
+    <article><b>دراڤين</b><span>سيد الصراعات.</span></article>
+    <article><b>أورثاس</b><span>حاكم التوازن وحامل أسرار العصر القديم.</span></article>
+    <article><b>سيلمار</b><span>سيد الأسرار.</span></article>
+    <article><b>إيفار</b><span>حاكم الانعكاسات.</span></article>
+  </div>
+</section>
+</main>
+<footer>ميثولوجيا الأزل الأعظم · عمل خيالي أصلي<br>كل الأسرار لم تُكشف بعد.</footer>
+<button id="topBtn" aria-label="العودة للأعلى">↑</button>
+<script>
+const chapters = [
+["ما قبل الوجود","البداية التي لا يملك أحد روايتها",[
+"قبل أن يوجد زمن يُقاس، أو سماء تُرى، أو أرض يُمكن الوقوف عليها، لم يكن الوجود منظماً، ولم يكن العدم سيداً عليه.",
+"كانت هناك حقائق أزلية متعددة، لكل منها طبيعتها الخاصة. لم يعرف أحد كيف ظهرت، ولم تكن هناك رواية متفق عليها عن أصلها.",
+"لم تكن هذه الحقائق آلهة بالمعنى المعروف، بل كيانات لا تحتاج إلى الولادة أو الخلق حتى تكون موجودة."
+]],
+["ظهور العروش الأولى","سبعة مراكز للسلطة الكونية",[
+"في حقبة لا يمكن تحديد بدايتها، ظهرت سبعة عروش كونية. لم يصنعها أحد، ولم تجتمع بإرادة مشتركة، لكنها أصبحت مراكز للسلطة داخل الوجود.",
+"جلس عليها أوريان، وناهير، وزاركون، وإيلورا، وميراث، وفالكير، وسيرافون. لم يكن السبعة متساوين في السلطة، ولم يكونوا تابعين لبعضهم. ولكل واحد منهم عالمه وقوانينه ومجاله."
+]],
+["الاجتماع الأول","أول اختلاف بين أصحاب العروش",[
+"اجتمع الحكام السبعة للمرة الأولى بسبب ظهور عوالم جديدة خارج نطاق العروش. رأى أوريان أن هذه العوالم يجب أن تخضع لقوانين التكوين، واعترض ناهير لأن بعضها لا يخضع للزمن.",
+"اعتبر زاركون وجودها خللاً يجب إنهاؤه، لكن فالكير قال:",
+"ليس كل ما لا نفهمه خللاً، وليس كل ما لا نخضع له عدواً.",
+"كانت تلك أول مرة يختلف فيها أصحاب العروش حول طبيعة الوجود نفسه."
+]],
+["ظهور المنفي","أزراخ الذي لا ينتمي إلى عرش",[
+"في منطقة بعيدة عن العروش، ظهر كيان لم يكن اسمه موجوداً في سجلات ميراث. أطلق عليه لاحقاً اسم أزراخ، المنفي الأول.",
+"لم يكن إلهاً، ولم يكن تابعاً لأي عرش. وكل قانون كوني يقترب منه يفقد قدرته على فرض نفسه عليه.",
+"كان يعرف شيئاً لم يعرفه أي واحد منهم: العروش السبعة لم تكن أول ما وُجد في هذا الوجود."
+]],
+["الحقيقة التي أخفاها ميراث","السجل الذي لم يكن ينبغي العثور عليه",[
+"دخل ميراث أقدم أرشيف في مملكته، فعثر على سجل يحمل عنوان: «العصر الذي سبق العروش». وجد فيه أسماء ثلاثة عشر عرشاً قديماً، لحكام لم يسمع بهم من قبل.",
+"وفي نهاية السجل وجد جملة واحدة:",
+"لم تسقط العروش، بل غادر أصحابها.",
+"لم يكن يعرف أين ذهبوا، لكنه تأكد أن تاريخهم لم يُمحَ من ذاكرته."
+]],
+["عودة الخوف","زمن لا أثر له في السجلات",[
+"أخبر ميراث الحكام الستة بما اكتشفه. لم يصدق زاركون الأمر، لكن ناهير لاحظ أن سجلات الزمن لا تحتوي على أي أثر للعصر السابق.",
+"قال ناهير: «إذا كانت هذه العروش قد وُجدت قبلنا، فأين ذهب تاريخها؟». أجاب ميراث: «لا أعرف، لكنني متأكد أن أحداً لم يمحُه من ذاكرتي»."
+]],
+["العرش الثامن","ظهور عرش لا يحمل علامة",[
+"ظهر عرش جديد في منطقة بعيدة من الفراغ. لم يكن يشبه العروش الأخرى، ولم تصدر عنه طاقة معروفة، ولم يستطع أي حاكم تحديد طبيعته.",
+"وصل الحراس فوجدوا أزراخ واقفاً أمامه. قال لهم: «بل أعرف صاحبه أكثر مما تعرفون أنفسكم». ثم غادر، واختفى العرش."
+]],
+["اعتراف أزراخ","لماذا غادر أصحاب العروش؟",[
+"طلب أوريان مقابلة أزراخ وسأله عن أصحاب العروش الثلاثة عشر. أجاب أزراخ: «لقد اكتشفوا أن العروش ليست ملكاً لهم، وأن سلطتهم ليست أبدية كما اعتقدوا».",
+"سأله أوريان إن كان هناك من هو أقوى منهم، فأجابه: «أنتم تسألون عن القوة، بينما السؤال الحقيقي هو: لماذا تعتقدون أن الوجود يحتاج إلى حاكم؟»."
+]],
+["بداية الانقسام","اختلاف الحكام السبعة",[
+"رأى أوريان أن أزراخ أصبح خطراً على استقرار الكون. وافقه زاركون وناهير على ضرورة مواجهته، لكن فالكير رفض.",
+"أما سيرافون فرأى في جميع الاحتمالات المستقبلية نتيجة واحدة: العروش السبعة ستدخل في حرب فيما بينها.",
+"وفي مكان بعيد ظهر نقش: «حين يجتمع أصحاب العروش الثلاثة عشر مجدداً، لن يكون هناك حاكم ولا محكوم»."
+]],
+["ارتجاف ما وراء الستار","توقف الزمن في مملكة ناهير",[
+"للمرة الأولى منذ نشأة العروش السبعة، توقفت جميع الساعات في مملكة ناهير. حاول إعادة الزمن إلى مساره، لكن العرش لم يستجب.",
+"سمع صوتاً يقول:",
+"أنت لا تتحكم بالزمن، أنت تتحكم بما يسمح الزمن لك بالوصول إليه.",
+"عاد الزمن إلى الحركة، لكن ناهير أدرك أن هناك شيئاً يستطيع تجاوز سلطته."
+]],
+["مجلس العروش السبعة","اختفاء ذكرى الاجتماع",[
+"اجتمع الحكام مرة أخرى. قال أوريان إن هناك قوة خارج نطاقهم، بينما طالب زاركون بالبحث عنها وإنهاء خطرها.",
+"تدخل سيرافون: «لقد بحثت في جميع الاحتمالات، ولم أجد أي نتيجة تتعلق بذلك الشيء».",
+"ثم كشف ميراث أن ذكرى اجتماعهم الأخير اختفت من سجلات مملكته."
+]],
+["ظهور الحارس الأخير","إيثارون يستيقظ",[
+"في مملكة أزورا، استيقظ كيان قديم اسمه إيثارون، الحارس الأخير. كانت مهمته مراقبة الحدود بين العوالم.",
+"قال جملة واحدة: «لقد عاد الصمت». لم يكن الصمت مجرد غياب الأصوات، بل اسماً لحقبة كاملة انتهت قبل ظهور العروش."
+]],
+["اعتراف المنفي","أنا من بقي بعد رحيلهم",[
+"التقى أزراخ بإيثارون. سأله إيثارون: «ماذا تنتظر؟». أجاب: «عودة صاحب العرش الأخير».",
+"قال إيثارون إن ذلك العرش لم يعد موجوداً. فأجابه أزراخ: «العرش اختفى، لكن صاحبه لم يختفِ»."
+]],
+["الرسالة الثالثة عشرة","لم نغادر جميعاً",[
+"ظهرت ثلاثة عشر علامة في السماء المظلمة، كل واحدة تمثل عرشاً قديماً. لكن العلامة الثالثة عشرة لم تحمل اسماً أو نقشاً.",
+"سمع أزراخ صوتاً يقول: «لقد طال انتظارك». فسأل: «هل عدتم؟». جاء الرد: «لم نغادر جميعاً». ثم اختفت العلامات."
+]],
+["القرار الذي غيّر التاريخ","انتهت ولاية الحاكم الأول",[
+"حذر أزراخ الحكام من اعتقادهم بأنهم أصحاب السلطة المطلقة. رفض زاركون التراجع، وبعد مغادرة أزراخ ظهر نقش على عرشه:",
+"لقد حان وقت الحساب.",
+"لم يكن النقش تهديداً، بل إعلاناً عن بداية عصر جديد."
+]],
+["سقوط الحاجز","انفتاح الطريق إلى الممالك القديمة",[
+"تحطم الحاجز الذي يفصل العوالم المعروفة عن المناطق القديمة. لم يكن جداراً مادياً، بل قانوناً كونياً يمنع الكيانات القديمة من العودة.",
+"ظهرت مملكة أركاثيا، التي تسكنها كائنات لا تمتلك أجساداً ثابتة ولا تتبع قوانين الحياة والموت. وكان حاكمها الأول فالزار."
+]],
+["عودة أصحاب العروش","القدماء يعودون إلى المشهد",[
+"عاد بعض أصحاب العروش الثلاثة عشر. كان بعضهم يريد استعادة سلطته، وبعضهم لم يعد مهتماً بالعروش، وآخرون يحملون عداءً قديماً للحكام السبعة.",
+"من أبرزهم فالزار، وأركيون، ونيمورا، ودراڤين، وأورثاس، وسيلمار، وإيفار. أما الستة الباقون فلم تظهر هوياتهم بعد."
+]],
+["محاكمة أزراخ","الحكام ليسوا ورثة العصور القديمة",[
+"اتهم زاركون أزراخ بأنه سبب عودة أصحاب العروش القديمة، وطالب بمحاكمته. رفض أزراخ الركوع أمام العروش.",
+"كشف أن الحكام السبعة لم يكونوا خلفاء لأصحاب العروش الثلاثة عشر، بل حكام عصر جديد نشأ بعد اختفاء العصر القديم. لم تكن العروش السبعة الورثة الشرعيين لجميع السلطات القديمة."
+]],
+["الحرب الأولى","انقسام العروش",[
+"رفض زاركون الاعتراف بسلطة العروش القديمة وأعلن الحرب. انقسم الحكام: أوريان وزاركون وناهير وإيلورا في معسكر، بينما اختار ميراث وفالكير وسيرافون الحياد.",
+"استمرت الحرب آلاف السنين، وتغيرت حدود العوالم واختفت ممالك. لكن أوريان لم يستطع السيطرة على أركاثيا، فكلما أعاد تشكيلها عادت بشكل مختلف."
+]],
+["سر أورثاس","لماذا اختفى أصحاب العروش؟",[
+"ظهر أورثاس في منتصف الحرب، ورفض الانضمام إلى أي معسكر. أخبر ميراث أن أصحاب العروش القديمة لم يختفوا بسبب الهزيمة.",
+"قال إنهم قرروا الانسحاب بعد اكتشاف حقيقة غيّرت نظرتهم إلى الكون، لكنه رفض الكشف عنها."
+]],
+["انطفاء عرش أوريان","انتهاء ولاية الحاكم الأول",[
+"خلال إحدى المعارك، انطفأ عرش أوريان. لم يتحطم، لكنه توقف عن الاستجابة لصاحبه. حاول أوريان استعادة سلطته دون جدوى.",
+"ظهرت كتابة على العرش: «انتهت ولاية الحاكم الأول». ثم اختفى النقش، لكن الرسالة وصلت إلى جميع العروش."
+]],
+["ظهور صاحب العرش الثالث عشر","لم يكن الأخير كما ظنوا",[
+"في منطقة ما وراء الستار، ظهر صاحب العرش الثالث عشر. لم يعلن الحرب ولم يطالب بالسلطة، لكنه أرسل رسالة إلى جميع العوالم:",
+"لقد انتهى زمنكم.",
+"توقفت الحرب، وشعر الجميع بوجوده. تراجع أزراخ خطوة وقال لإيثارون: «لم يكن من المفترض أن يعود».",
+"ثم أضاف: «هذا ليس صاحب العرش الأخير الذي كنا ننتظره»."
+]]
+];
+const host=document.getElementById('chapters');
+chapters.forEach((c,i)=>{
+ const el=document.createElement('article');el.className='chapter'+(i===0?' open':'');
+ const head=document.createElement('div');head.className='chapter-head';
+ head.innerHTML=`<div class="number">${String(i+1).padStart(2,'0')}</div><div><h3>الفصل ${i+1}: ${c[0]}</h3><small>${c[1]}</small></div><div class="arrow">⌄</div>`;
+ const body=document.createElement('div');body.className='chapter-body';
+ c[2].forEach((p,j)=>{const para=document.createElement('p');if(p.length<100 && (p.startsWith('ليس كل')||p.startsWith('لم تسقط')||p.startsWith('أنت لا')||p.startsWith('لقد طال')||p.startsWith('لقد حان')||p.startsWith('لقد انتهى')))para.className='quote';para.textContent=p;body.appendChild(para)});
+ head.addEventListener('click',()=>el.classList.toggle('open'));
+ el.append(head,body);host.appendChild(el);
+});
+document.querySelectorAll('nav button[data-target]').forEach(b=>b.addEventListener('click',()=>{
+ document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');
+ document.getElementById(b.dataset.target).scrollIntoView({behavior:'smooth',block:'start'});
+}));
+let allOpen=false;document.getElementById('expandAll').addEventListener('click',e=>{
+ allOpen=!allOpen;document.querySelectorAll('.chapter').forEach(c=>c.classList.toggle('open',allOpen));
+ e.currentTarget.textContent=allOpen?'طي جميع الفصول':'فتح جميع الفصول';
+});
+const topBtn=document.getElementById('topBtn');window.addEventListener('scroll',()=>topBtn.style.display=window.scrollY>450?'block':'none');topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+</script>
+</body>
+  </html>
